@@ -39,7 +39,7 @@ function generatePassword() {
   if (specialCharacters === "y"){
     parametersSelected = parametersSelected + 1;
     FinalLength = FinalLength + 31;
-    possibleCharacters += "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+    possibleCharacters += "!#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
   }
   var numbers = prompt("Would you like numbers? y/n", "y");
   if (numbers === null) {
@@ -70,6 +70,9 @@ function generatePassword() {
    randomNumber = Math.floor(Math.random() * FinalLength);
    finalPassword += possibleCharacters.charAt(randomNumber);
   }
+  console.log(FinalLength);
+  console.log(possibleCharacters.length);
+  console.log(finalPassword.length);
   console.log(finalPassword);
   return(finalPassword);
 }
