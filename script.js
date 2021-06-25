@@ -51,7 +51,7 @@ function generatePassword() {
     possibleCharacters += "1234567890"
   }
   if (parametersSelected === 0) {
-    return;
+    return("You didn't select any parameters! how are we going to make a password out of nothing?");
   } 
   console.log(possibleCharacters);
   var passwordLength = prompt("How long do you want your password? (please type a number, not the work for that number)");
