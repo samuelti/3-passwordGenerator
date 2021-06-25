@@ -16,7 +16,7 @@ function generatePassword() {
   var possibleCharacters = "";
   var lowerCase = prompt("Lower case letters? y/n", "y");
   if (lowerCase === null) {
-    return;
+    return("You canceled the operation");
   }
   if (lowerCase === "y"){
     parametersSelected = parametersSelected + 1;
@@ -25,7 +25,7 @@ function generatePassword() {
   }
   var capitals = prompt("Upper case letters? y/n","y");
   if (capitals === null) {
-    return;
+    return("You canceled the operation");
   }
   if (capitals === "y"){
     parametersSelected = parametersSelected + 1;
@@ -34,7 +34,7 @@ function generatePassword() {
   }
   var specialCharacters = prompt("Special characters? y/n", "y");
   if (specialCharacters === null) {
-    return;
+    return("You canceled the operation");
   }
   if (specialCharacters === "y"){
     parametersSelected = parametersSelected + 1;
@@ -43,7 +43,7 @@ function generatePassword() {
   }
   var numbers = prompt("Would you like numbers? y/n", "y");
   if (numbers === null) {
-    return;
+    return("You canceled the operation");
   }
   if (numbers === "y"){
     parametersSelected = parametersSelected + 1;
