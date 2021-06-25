@@ -1,3 +1,4 @@
 # 3-passwordGenerator
 
-This project has a number of technol
+This project is a password generator, using javascript to prompt a user for imputs, then analysing them and finally using a random number generator hooked up to a for loop. As such it generates hard to decyrpt passwords. The operation of the website is simple, prompts will ask what the user wants, lowercase, uppercase, special characters, and numbers. If anything is entered incorrectly, the system tells them what went wrong. 
+While the technology isn't exactly cutting edge, it is new to me, and the pseudo code took quite some time to work through. While the action the machine takes looks simple on paper, computers don't think like humans, computers can't assume. so you have to break the problem down. First, generate a string of all letters, numbers and special characters, for each selection add the proper characters to the final character group. The program then pulls a random number, which correspons to a character in the string, that character is taken and added to a second string, rince and repeat!
